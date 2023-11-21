@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+}
+body::before{
+    content: '';
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    background-image: linear-gradient(rgba(107, 50, 77, 0.7), rgba(128, 100, 128,0.7)),url(./survey-form-background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body{
+    font-size: 1rem ;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+.container{
+    width: 50%;
+    margin: 3.125rem auto 0 auto;
+}
+@media (max-width: 1200px){
+    .container{
+        width: 60%;
+    }
+}
+
+@media (max-width: 900px){
+    .container{
+        width: 70%;
+    }
+}
+
+@media (max-width: 700px){
+    .container{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media (max-width: 400px){
+    .container{
+        width: 100%;
+    }
+}
+header{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+form{
+    background: rgba(16, 22, 59,0.7);
+    padding: 2rem 2rem;
+    border-radius: 0.25rem;
+}
+
+.form-group{
+    margin: 0 auto 1.25rem auto;
+    padding: 0.25rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    height: 2.375rem;
+    padding: 0.35rem 0.75rem;
+    color: rgb(56, 55, 55);
+    background-clip: padding-box;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.form-control:hover{
+    border-color: blueviolet;
+    box-shadow: 2rem;
+}
+p, h1{
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1{
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+p{
+    font-size: 1.25rem;
+}
+
+.input-checkbox, .input-radio{
+    margin-right: 0.625rem;
+    min-width:1.25rem;
+    min-height: 1.25rem;
+}
+
+.input-textarea{
+    height: 120px;
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.125rem;
+}
+
+.submit-button{
+    display: block;
+    color: black;
+    background-color: rgb(66, 177, 66);
+    padding: 0.7rem;
+    width: 99%;
+    cursor: pointer;
+    border: none;
+    font-size: 1.125rem;
+    border-radius: 2px;
+}
+.submit-cont{
+    display: flex;
+    justify-content: center;
+}
+
+option{
+    color: black;
+}
+
+

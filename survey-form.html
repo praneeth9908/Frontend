@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./survey_from.css">
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title">Survey Form</h1>
+                <p id="description">Fill your details correctly</p>
+            </header>
+            <form id="survey-from">
+                <div class="form-group">
+                    <label id="name-label">Name</label>
+                    <input id="name" type="text" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label id="email-label">Email</label>
+                    <input id="email" type="email" class="form-control" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label id="number-label">Age</label>
+                    <input id="number" type="number" class="form-control" placeholder="Enter your Age" required>
+                </div>
+                <div class="form-group">
+                    <p>Gender</p>
+                    <select id="dropdown" class="form-control" required>
+                        <option disabled selected value>Select Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                        <option>Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <p>Marital Status</p>
+                    <label>
+                        <input name="marital-status" value="single" type="radio" class="input-radio">
+                        Single
+                    </label>
+                    <label>
+                        <input name="marital-status" value="married" type="radio" class="input-radio">
+                        Married
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Education</p>
+                    <label>
+                        <input name="education" value="10th" type="checkbox" class="input-checkbox">
+                        10th
+                    </label>
+                    <label>
+                        <input name="education" value="12th" type="checkbox" class="input-checkbox">
+                        12th
+                    </label>
+                    <label>
+                        <input name="education" value="Graduation" type="checkbox" class="input-checkbox">
+                        Graduation
+                    </label>
+                </div>
+                <div class="form-group">
+                    <p>Comments</p>
+                    <textarea id="comments" class="input-textarea" placeholder="Enter your comments"></textarea>
+                </div>
+                <div class="submit-cont">
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </div>
+        </div>
+        
+        </form>
+    </body>
+</html>
