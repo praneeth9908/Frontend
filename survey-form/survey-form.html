@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./survey-form.css">
     </head>
-    <body>
+    <body onsubmit="display()">
         <div class="container">
             <header>
                 <h1 id="title">Survey Form</h1>
@@ -23,7 +23,7 @@
                 </div>
                 <div class="form-group">
                     <label id="number-label">Age</label>
-                    <input id="number" type="number" class="form-control" placeholder="Enter your Age" required>
+                    <input id="number" type="number" class="form-control" min="0" max="100" placeholder="Enter your Age" required>
                 </div>
                 <div class="form-group">
                     <p>Gender</p>
@@ -67,8 +67,15 @@
                 <div class="submit-cont">
                     <button type="submit" id="submit" class="submit-button">Submit</button>
                 </div>
-        </div>
-        
-        </form>
+                
+                </div>
+            </form>
+        <script>
+            function display(){
+                let name = document.getElementById("name").value
+                alert("Form is Submitted:- "+name)
+
+            }
+        </script>
     </body>
 </html>
